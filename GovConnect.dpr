@@ -10,15 +10,20 @@ uses
   UM_Login in 'Model\UM_Login.pas',
   UC_Cidadao in 'Controller\UC_Cidadao.pas',
   UC_Gestor in 'Controller\UC_Gestor.pas',
-  UC_Login in 'Controller\UC_Login.pas';
+  UC_Login in 'Controller\UC_Login.pas',
+  DataModule in 'DataBase\DataModule.pas' {DataModule1: TDataModule},
+  TesteBanco in 'DataBase\TesteBanco.pas' {Form4};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm4, Form4);
+  Application.CreateForm(TForm1, Form);
   Application.CreateForm(TForm2, Form2);
   Application.CreateForm(TForm3, Form3);
+  Application.CreateForm(TDataModule1, DataModule1);
+
   Application.Run;
 end.

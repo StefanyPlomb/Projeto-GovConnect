@@ -141,6 +141,14 @@
         <DCCReference Include="Controller\UC_Cidadao.pas"/>
         <DCCReference Include="Controller\UC_Gestor.pas"/>
         <DCCReference Include="Controller\UC_Login.pas"/>
+        <DCCReference Include="DataBase\DataModule.pas">
+            <Form>DataModule1</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="DataBase\TesteBanco.pas">
+            <Form>Form4</Form>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
